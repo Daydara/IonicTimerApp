@@ -14,3 +14,53 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+
+@media only screen and (orientation: landscape) {
+      //code du bouton stop pour le mettre a droite en landscape view
+      #btn {
+        background-color: green ;
+        padding: 19px;
+        display: block;
+        float: right;
+      }
+
+       ion-content{
+         //rajoute une image en bg en landscape view
+         background-image: url('./../assets/imgs/train5.jpg');
+         -webkit-background-image: url('./../assets/imgs/train5.jpg');
+         background-position:center center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         max-width: 100%;
+
+
+      }
+
+      .vertical{
+        //met la div timer au centre en landscape view
+        height: 150px;
+        display: -webkit-flex;
+        display:         flex;
+        -webkit-align-items: center;
+                align-items: center;
+        -webkit-justify-content: center;
+                justify-content: center;
+      }
+
+      #timer {
+        //colorie le timer en bleu
+        background-color: lightblue;
+      }
+}
+
+@media only screen and (orientation: portrait) {
+      ion-content{
+        //affichage portrait avec sa bg image
+        background-image: url('./../assets/imgs/train4.jpeg');
+        background-position:center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+     }
+}

@@ -7,8 +7,29 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <div class="vertical">
+          <div class="">
+            <p id="timer">
+              {{timer}}
+            </p>
+          </div>
+        </div>
+
+        <p>
+          <button  ion-button color="light" (click)="startBtn()">Start</button>
+          <button id="btn" ion-button color="light" (click)="stopBtn()">Stop</button>
+        </p>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+
+
+
 </ion-content>
